@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxy - Android & Windows Roblox Executor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at top, #1a073d, black);
+            color: white;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        
+        .fade-in { opacity: 0; }
+
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(0, 0, 255, 0.7), 0 0 20px rgba(0, 0, 255, 0.7);
+        }
+
+        header p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .button {
+            background-color: #00bcd4;
+            padding: 20px 40px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            margin-top: 50px; /* Moved the "Download Now" button down */
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            background-color: #0097a7;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .features-list {
+            color: #ccc;
+            font-size: 1.1rem;
+            line-height: 2;
+        }
+
+        .feature-item {
+            padding: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature-item:hover {
+            transform: scale(1.05);
+            color: #00bcd4;
+        }
+
+        .download-buttons {
+            margin-top: 50px;
+        }
+
+        .download-button {
+            padding: 15px 30px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .android-button {
+            background-color: #4caf50; /* Green for Android */
+        }
+
+        .android-button:hover {
+            background-color: #388e3c;
+            transform: scale(1.1);
+        }
+
+        .windows-button {
+            background-color: #2196f3; /* Blue for Windows */
+        }
+
+        .windows-button:hover {
+            background-color: #1976d2;
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 100px;
+            padding: 20px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="fade-in">
+        <h1>Fluxy - Android & Windows Roblox Executor</h1>
+        <p>Run scripts with ease on Android & Windows!</p>
+    </header>
+
+    <main class="fade-in">
+        <section>
+            <h2>Features</h2>
+            <ul class="features-list">
+                <li class="feature-item">- Fast script execution</li>
+                <li class="feature-item">- User-friendly interface</li>
+                <li class="feature-item">- Frequent updates</li>
+                <li class="feature-item">- Safe & secure</li>
+            </ul>
+        </section>
+
+        <section id="download">
+            <h2>Download</h2>
+            <p>Get the latest version of Fluxy and start scripting today!</p>
+            <div class="download-buttons">
+                <a href="YOUR_ANDROID_DOWNLOAD_LINK" class="download-button android-button">Download APK</a>
+                <a href="YOUR_WINDOWS_DOWNLOAD_LINK" class="download-button windows-button">Download Windows</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fade-in">
+        <p>&copy; 2025 Fluxy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        gsap.to(".fade-in", { opacity: 1, duration: 1, stagger: 0.3 });
+    </script>
+</body>
+</html>
